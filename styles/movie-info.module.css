@@ -7,8 +7,8 @@
 }
 
 .poster {
-  border-radius: 20px;
-  max-width: 70%;
+  border-radius: 10px;
+  max-width: 100%;
   place-self: center;
 }
 
@@ -23,4 +23,12 @@
   flex-direction: column;
   margin-top: 20px;
   gap: 20px;
+}
+
+.avg {
+  margin-top: 20px;
+}
+
+.hompage {
+  margin-top: 20px;
 }

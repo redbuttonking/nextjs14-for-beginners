@@ -1,5 +1,7 @@
 # Next JS 강의 \_ 노마드 코더
 
+[API링크\_클릭](https://nomad-movies.nomadcoders.workers.dev/)
+
 ## 1. 프로젝트 Set up
 
 1. 프로젝트 폴더 만들기
@@ -411,3 +413,16 @@ export async function generateMetadata({ params: { id } }: Iparams) {
 
 ⭐중요⭐  
 metadata를 위해서 API를 호출 하고 이후 영화 정보를 불러오려고 API를 또 호출하는 것이 안 좋은 방법이라고 생각 할 수 있지만 최신 Next의 기능으로 두번째 fetch는 캐시된 응답을 받기 때문에 괜찮음!
+
+### 💬 prefetch
+
+**_📖 예시코드_**
+
+```ts
+      <Link prefetch href={`/movie/${id}`}>
+```
+
+이 Lick가 사용자에게 보이게 되면 Next는 자동으로 fetch를 시작함
+
+⭐중요⭐  
+너무 난무하게 prefetch를 사용하면 DB가 터질수도 있음 ㅎ (적절한 곳에 사용 할 것.)

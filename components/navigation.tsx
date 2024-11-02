@@ -10,12 +10,23 @@ export default function Navigation() {
   return (
     <div className={styles.nav}>
       <ul>
-        <Link href="/">
-          <li>Home</li> {path === '/' ? '🎈' : ''}
-        </Link>
-        <Link href="/about-us">
-          <li>About Us</li> {path === '/about-us' ? '🎈' : ''}
-        </Link>
+        <li>
+          <Link href="/">
+            <img src="https://image.tving.com/ntgs/operation/logo/2023/09/18/1695032536_1.svg" alt="티빙 아이콘" />
+          </Link>
+        </li>
+
+        <li>
+          <Link href="/">
+            <div className={styles.text}>Home {path === '/' ? '🎈' : ''}</div>
+          </Link>
+        </li>
+
+        <li>
+          <Link href="/about-us">
+            <div className={styles.text}>About Us {path === '/about-us' ? '🎈' : ''}</div>
+          </Link>
+        </li>
       </ul>
     </div>
   );
