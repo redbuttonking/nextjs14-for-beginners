@@ -1,6 +1,7 @@
 # Next JS 강의 \_ 노마드 코더
 
-[API링크\_클릭](https://nomad-movies.nomadcoders.workers.dev/)
+👉 [API링크](https://nomad-movies.nomadcoders.workers.dev/)  
+👉 [프로젝트 링크 ](https://nextjs14-movies-3s5lg2uvc-redbuttonkings-projects.vercel.app/)
 
 ## 1. 프로젝트 Set up
 
